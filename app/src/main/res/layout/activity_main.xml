@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="424dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="@dimen/col_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="Clear"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/CE"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="ClearEverything"
+            android:text="@string/clear_everything" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="Add"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="Subtract"
+            android:text="@string/subtract" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:onClick="Multiply"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:onClick="Divide"
+            android:text="@string/divide" />
+
+        <Button
+            android:id="@+id/point"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:onClick="DecimalInput"
+            android:text="@string/point" />
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:onClick="Equals"
+            android:text="@string/equals" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:onClick="OneInput"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:onClick="TwoInput"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:onClick="ThreeInput"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="FourInput"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="FiveInput"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="SixInput"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="SevenInput"
+            android:text="@string/seven" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="EightInput"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="NineInput"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="@dimen/cell_width"
+            android:layout_height="@dimen/cell_height"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:onClick="ZeroInput"
+            android:text="@string/zero" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/calcText"
+        android:layout_width="184dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:layout_marginBottom="509dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
